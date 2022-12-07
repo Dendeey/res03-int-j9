@@ -1,0 +1,240 @@
+@import "vars";
+
+@media (min-width: 768px)
+{
+    html
+    {
+        font-size: 14px;
+        scroll-behavior: smooth;
+        
+    }
+    
+    body
+    {
+        width: 100vw;
+        min-height: 100vh;
+        font-family: 'Montserrat', sans-serif;
+        background: $linear-gradient, url("https://res03.sites.3wa.io/assets/files/inte/j9/assets/img/code.jpeg");
+        margin: 0;
+        padding: 0;
+        
+        .hidden
+        {
+            display: none;
+        }
+        
+        & > header
+        {
+            display: grid;
+            grid-template-columns: 0.1fr 1fr;
+            height: 10vh;
+            background: $background-header;
+            
+            figure
+            {
+                align-self: center;
+                
+               img
+               {
+                   width: 7vw;
+                   height: 7vh;
+               }
+            }
+            
+            nav
+            {
+                align-self: center;
+                
+                ul
+                {
+                    padding-left: 15vw;
+                    
+                    li
+                    {
+                        display: inline-block;
+                        width: calc(100% / 4);
+                        font-size: 1em;
+                        color: white;
+                       
+                    }
+                }
+            }
+        }
+        
+        & > main
+        {
+            display: flex;
+            width: 100vw;
+            height: 90vh;
+            align-content: center;
+            justify-content: center;
+            
+            section
+            {
+                align-self: center;
+                justify-self: center;
+                font-family: 'Roboto Condensed', sans-serif;
+                
+                h1
+                {
+                    font-weight: bold;
+                    font-size: 6em;
+                    color: white;
+                    padding: 0;
+                    margin: 0;
+                    
+                }
+                
+                h2
+                {
+                    color: $green;
+                    font-weight: bold;
+                    font-size: 5em;
+                    padding: 0;
+                    margin-top: -1vh;
+                }
+            }
+        }
+        
+        & > footer
+        {
+            height: 4vh;
+            background: $background-footer;
+            padding-bottom: 1rem;
+            padding-top: 1.5rem;
+            
+            h2
+            {
+                color: white;
+                font-size: 1em;
+                text-align: center;
+                
+            }
+        }
+    }
+}
+
+@media (max-width: 767px)
+{
+    html
+    {
+        font-size: 14px;
+        scroll-behavior: smooth;
+        
+    }
+    
+    body
+    {
+        width: 100vw;
+        min-height: 100vh;
+        font-family: 'Montserrat', sans-serif;
+        background: $linear-gradient, url("https://res03.sites.3wa.io/assets/files/inte/j9/assets/img/code-portrait.jpg");
+        margin: 0;
+        padding: 0;
+        
+        .hidden
+        {
+            display: none;
+        }
+        
+        & > header
+        {
+            display: grid;
+            grid-template-rows: 1fr 1fr;
+            height: 10vh;
+            background: $background-header;
+            
+            figure
+            {
+                align-self: center;
+                justify-self: center;
+                margin: 0;
+                padding: 0;
+                
+               img
+               {
+                    width: 5vw;
+                    height: 5vh;
+                    margin: 0;
+                    padding: 0;
+               }
+            }
+            
+            nav
+            {
+                justify-self: center;
+                width: 100%;
+                
+                ul
+                {
+                    display: grid;
+                    grid-template-columns: repeat(3, 1fr);
+                    width: 100%;
+                    list-style: none;
+                    margin-left: 0;
+                    padding-left: 0;
+                    
+                    li
+                    {
+                        font-size: 1em;
+                        color: white;
+                        text-align: center;
+                        
+                    }
+                }
+            }
+        }
+        
+        & > main
+        {
+            display: flex;
+            width: 100vw;
+            height: 90vh;
+            align-content: center;
+            justify-content: center;
+            
+            section
+            {
+                align-self: center;
+                justify-self: center;
+                font-family: 'Roboto Condensed', sans-serif;
+                
+                h1
+                {
+                    font-weight: bold;
+                    font-size: 6em;
+                    color: white;
+                    padding: 0;
+                    margin: 0;
+                    text-align: center;
+                    
+                }
+                
+                h2
+                {
+                    color: $green;
+                    font-weight: bold;
+                    font-size: 5em;
+                    padding: 0;
+                    margin-top: -1vh;
+                }
+            }
+        }
+        
+        & > footer
+        {
+            height: 4vh;
+            background: $background-footer;
+            padding-bottom: 1rem;
+            padding-top: 1.5rem;
+            
+            h2
+            {
+                color: white;
+                font-size: 1em;
+                text-align: center;
+                
+            }
+        }
+    }
+}
